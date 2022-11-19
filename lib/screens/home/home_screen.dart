@@ -55,22 +55,44 @@ class HomeScreen extends StatelessWidget {
                               child: Text(""),
                             ),
                             Container(
-                              color: Colors.pink,
+                              // color: Colors.pink,
+                              margin: const EdgeInsets.only(right: 10),
                               width: 50,
-                              height: 400,
+                              height: 200,
                               child: Column(
-                                children: [Text("data")],
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.favorite_border,
+                                        color: Colors.white,
+                                      )),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.volume_off_outlined,
+                                        color: Colors.white,
+                                      )),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.share_outlined,
+                                        color: Colors.white,
+                                      ))
+                                ],
                               ),
                             )
                           ],
                         ),
-                        Container(
-                          color: Colors.lightBlue,
-                          height: 80,
-                          child: Row(
-                            children: [Text("Botom row")],
-                          ),
-                        )
+                        // Container(
+                        //   color: Colors.lightBlue,
+                        //   height: 80,
+                        //   child: Row(
+                        //     children: [Text("Botom row")],
+                        //   ),
+                        // )
                       ],
                     ),
                   )))
